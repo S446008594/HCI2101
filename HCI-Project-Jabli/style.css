@@ -1,16 +1,15 @@
-/* 1. تعريف الألوان والهوية البصرية (تم دمج الألوان الأنيقة) */
 :root {
-    --primary: #1a5276;    /* أزرق جامعة أم القرى */
-    --accent-color: #6c5ce7; /* البنفسجي الأنيق للكروت */
+    --primary: #1a5276;   
+    --accent-color: #6c5ce7; 
     --bg: #f8f9fa;
     --text: #2c3e50;
     --card: #ffffff;
     --nav: #ffffff;
     --border: #dee2e6;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* الظل الأنيق */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* 2. تفعيل الوضع الداكن عند وجود كلاس dark-theme */
+
 .dark-theme {
     --bg: #121212;
     --text: #e0e0e0;
@@ -22,7 +21,7 @@
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* 3. إعدادات الصفحة العامة */
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +36,7 @@ body {
     line-height: 1.6;
 }
 
-/* 4. الشريط العلوي الثابت */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -85,29 +84,29 @@ body {
     color: #fff !important;
 }
 
-/* 5. تنسيق المحتوى الرئيسي */
+
 .main-container {
     max-width: 1000px;
     margin: 120px auto 50px;
     padding: 0 20px;
 }
 
-/* --- تعديل: الكروت الأنيقة --- */
+
 .card {
     background-color: var(--card);
-    border-radius: 20px; /* انحناء أكبر */
+    border-radius: 20px; 
     padding: 30px;
     margin-bottom: 25px;
-    border: none; /* إزالة الحدود التقليدية */
-    box-shadow: var(--shadow); /* استخدام الظل العميق */
+    border: none; 
+    box-shadow: var(--shadow); 
     transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* حركة بسيطة عند التأشير */
+    transform: translateY(-5px); 
 }
 
-/* 6. تنسيق صفحة الفريق (كروت الفريق الأنيقة) */
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -117,7 +116,7 @@ body {
 
 .member-card {
     background-color: var(--card);
-    border-radius: 25px; /* انحناء دائري فخم */
+    border-radius: 25px; 
     padding: 40px 20px;
     text-align: center;
     box-shadow: var(--shadow);
@@ -126,7 +125,7 @@ body {
 }
 
 .member-card:hover {
-    transform: translateY(-12px); /* القفزة للأعلى */
+    transform: translateY(-12px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -135,7 +134,7 @@ body {
     height: 115px;
     border-radius: 50%;
     margin: 0 auto 20px;
-    border: 4px solid var(--accent-color); /* تحديد بلون البنفسجي */
+    border: 4px solid var(--accent-color); 
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -151,13 +150,13 @@ body {
     margin-bottom: 10px;
 }
 
-/* 7. تنسيق الجداول والقوائم */
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     border-radius: 12px;
-    overflow: hidden; /* لزوايا الجدول الدائرية */
+    overflow: hidden; 
 }
 
 th, td {
@@ -167,11 +166,11 @@ th, td {
 }
 
 th {
-    background-color: var(--accent-color); /* رأس الجدول باللون الأنيق */
+    background-color: var(--accent-color); 
     color: white;
 }
 
-/* 8. التجاوب مع الجوال */
+
 @media (max-width: 768px) {
     .navbar ul {
         flex-wrap: wrap;
@@ -184,4 +183,5 @@ th {
     .main-container {
         margin-top: 150px;
     }
+
 }
