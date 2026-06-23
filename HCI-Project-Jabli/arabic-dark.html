@@ -3,75 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>توصيف مقرر: أخلاقيات التفاعل بين الإنسان والحاسب</title>
+    <title>توصيف مقرر: أخلاقيات في تفاعل الإنسان مع الحاسب</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
-<nav class="navbar">
-    <div class="nav-container">
-        <span class="logo">HCI 2204</span>
+
+<button onclick="toggleDarkMode()" style="margin: 20px; cursor: pointer;">
+ تبديل الوضع (ليلي/نهاري)
+</button>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+<body class="light-mode">
+
+    <nav class="navbar">
         <ul>
-            <li><a href="index.html" class="active">العربية (فاتح)</a></li>
-            <li><a href="arabic-dark.html">العربية (داكن)</a></li>
-            <li><a href="english.html">English (Light)</a></li>
-            <li><a href="english-dark.html">English (Dark)</a></li>
-            <li><a href="team.html">فريق العمل</a></li>
+            <li><a href="#general-info">معلومات عامة</a></li>
+            <li><a href="#clos">مخرجات التعلم</a></li>
+            <li><a href="#content">محتوى المقرر</a></li>
+            <li><a href="#lessons-learned">الدروس المستفادة</a></li>
+            <li><a href="#assessment">التقييم</a></li>
+            <li><a href="#references">المراجع</a></li>
         </ul>
-    </div>
-</nav>
-    <main class="main-container container">
-        <header class="course-header">
-            <h1>أخلاقيات التفاعل بين الإنسان والحاسب</h1>
-            <p class="course-code">رمز المقرر: <strong>HCI 2204</strong></p>
+    </nav>
+
+    <div class="container">
+        <header class="course-header" style="text-align: center; margin-bottom: 30px; padding: 20px; border-bottom: 2px solid #ccc;">
+            <h2>جامعة أم القرى</h2>
+            <h3>كلية الحاسب الآلي ونظم المعلومات | قسم هندسة البرمجيات</h3>
+            <h1>مقرر: أخلاقيات في تفاعل الإنسان مع الحاسب</h1>
+            <p>رمز المقرر: <strong>HCI 2204</strong></p>
         </header>
 
-        <section id="general-info" class="content-section card">
-            <h2>أ. معلومات عامة عن المقرر</h2>
-            <div class="info-grid">
-                <p><strong>الوصف العام:</strong> يبحث هذا المقرر في الاعتبارات الأخلاقية التي تنشأ في التفاعل بين الإنسان والحاسب، مع التركيز على المبادئ الأخلاقية، الخصوصية، والمسؤوليات الاجتماعية.</p>
-                <p><strong>الساعات المعتمدة:</strong> 2 ساعة</p>
-                <p><strong>المستوى:</strong> السنة الثانية / المستوى الرابع</p>
-                <p><strong>القسم:</strong> هندسة البرمجيات</p>
-            </div>
+        <section id="general-info">
+            <h2>معلومات عامة عن المقرر</h2>
+            <p><strong>الوصف العام:</strong> يبحث مقرر أخلاقيات في تفاعل الإنسان مع الحاسب في الاعتبارات الأخلاقية التي تنشأ عند تعامل البشر مع الأنظمة، مع التركيز على المبادئ الأخلاقية، الخصوصية، الملكية الفكرية، والمسؤوليات الاجتماعية.</p>
+            <ul>
+                <li><strong>الساعات المعتمدة:</strong> 2.</li>
+                <li><strong>المستوى:</strong> السنة الثانية / المستوى الرابع.</li>
+                <li><strong>المتطلبات السابقة:</strong> لا يوجد.</li>
+            </ul>
         </section>
 
-        <section id="clos" class="content-section card">
-            <h2>ب. مخرجات تعلم المقرر (CLOs)</h2>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>الرمز</th>
-                            <th>مخرجات التعلم</th>
-                            <th>طرق التقييم</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.1</td>
-                            <td>شرح الأطر الأخلاقية والقانونية والاجتماعية ذات الصلة بـ HCI.</td>
-                            <td>الاختبارات / الواجبات</td>
-                        </tr>
-                        <tr>
-                            <td>2.1</td>
-                            <td>التواصل الفعال للتحليلات الأخلاقية من خلال دراسات الحالة.</td>
-                            <td>مشروع بحثي</td>
-                        </tr>
-                        <tr>
-                            <td>3.1</td>
-                            <td>إظهار حكم مستنير والالتزام بالمبادئ الأخلاقية المهنية.</td>
-                            <td>امتحانات / مشروع بحثي</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <hr>
+
+        <section id="clos">
+            <h2>مخرجات تعلم المقرر (CLOs)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الرمز</th>
+                        <th>مخرجات التعلم</th>
+                        <th>طرق التقييم</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.1</td>
+                        <td>شرح الأطر الأخلاقية والقانونية والاجتماعية ذات الصلة بتفاعل الإنسان مع الحاسب.</td>
+                        <td>الاختبارات / الواجبات</td>
+                    </tr>
+                    <tr>
+                        <td>2.1</td>
+                        <td>التواصل الفعال للتحليلات الأخلاقية من خلال دراسات الحالة والمناقشات المهنية.</td>
+                        <td>مشروع بحثي</td>
+                    </tr>
+                    <tr>
+                        <td>3.1</td>
+                        <td>إظهار حكم مستنير والالتزام بالمبادئ الأخلاقية المهنية في ممارسات تفاعل الإنسان مع الحاسب.</td>
+                        <td>امتحانات / مشروع بحثي</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section id="content" class="content-section card">
-            <h2>ج. مواضيع المقرر</h2>
-            <ol class="topics-list">
-                <li>مقدمة في أخلاقيات التفاعل بين الإنسان والحاسب.</li>
+        <section id="content">
+            <h2>مواضيع المقرر</h2>
+            <ol>
+                <li>مقدمة في أخلاقيات تفاعل الإنسان مع الحاسب.</li>
                 <li>الأطر والنظريات الأخلاقية.</li>
                 <li>الخصوصية والأمن والحريات المدنية.</li>
                 <li>الملكية الفكرية وأخلاقيات البرمجيات.</li>
@@ -80,47 +91,57 @@
             </ol>
         </section>
 
-        <section id="assessment" class="content-section card">
-            <h2>د. أنشطة تقييم الطلاب</h2>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>النشاط</th>
-                            <th>الأسبوع</th>
-                            <th>النسبة</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>الاختبارات القصيرة</td><td>3-14</td><td>10%</td></tr>
-                        <tr><td>الواجبات</td><td>3-14</td><td>10%</td></tr>
-                        <tr><td>مشروع بحثي</td><td>15</td><td>20%</td></tr>
-                        <tr><td>الاختبار النصفي</td><td>7-8</td><td>20%</td></tr>
-                        <tr><td>الاختبار النهائي</td><td>16-17</td><td>40%</td></tr>
-                    </tbody>
-                </table>
-            </div>
+        <section id="lessons-learned">
+            <h2>الدروس المستفادة (Lessons Learned)</h2>
+            <ul>
+                <li>فهم عميق لكيفية حماية خصوصية المستخدمين وأمن بياناتهم أثناء تصميم أنظمة التفاعل.</li>
+                <li>القدرة على التمييز بين حقوق الملكية الفكرية المختلفة وتطبيق أخلاقيات البرمجيات في المشاريع التقنية.</li>
+                <li>استيعاب أهمية تصميم واجهات مستخدم شاملة تضمن إمكانية الوصول لجميع فئات المجتمع بما فيهم ذوي الإعاقة.</li>
+                <li>اتخاذ قرارات هندسية وممارسات مهنية مسؤولة تتوافق مع الأطر القانونية والأخلاقية العالمية والمحلية.</li>
+            </ul>
         </section>
 
-        <section id="references" class="content-section card">
-            <h2>هـ. المراجع والمصادر</h2>
-            <div class="resource-card">
-                <img src="images/book-cover.jpg" alt="Ethics and Technology" class="book-img">
-                <div class="resource-text">
-                    <p><strong>المرجع الأساسي:</strong></p>
-                    <p>الأخلاق والتكنولوجيا: الجدل والتساؤلات (الطبعة السادسة) - Herman T. Tavani</p>
-                    <div class="links-group">
-                        <a href="https://www.amazon.com/Ethics-Technology-Controversies-Strategies-Computing/dp/1119710574" target="_blank" class="btn-link">رابط شراء الكتاب</a>
-                        <a href="https://drive.uqu.edu.sa/_/ccomp_se/files/1efb999c-d52b-4b1a-a9ef-b906fafd426b.pdf" target="_blank" class="btn-link secondary">رابط توصيف المقرر الرسمي</a>
-                    </div>
+        <section id="assessment">
+            <h2>أنشطة تقييم الطلاب</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>النشاط</th>
+                        <th>الأسبوع</th>
+                        <th>النسبة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>الاختبارات القصيرة (Quizzes)</td><td>3-14</td><td>10%</td></tr>
+                    <tr><td>الواجبات</td><td>3-14</td><td>10%</td></tr>
+                    <tr><td>مشروع بحثي</td><td>15</td><td>20%</td></tr>
+                    <tr><td>الاختبار النصفي</td><td>7-8</td><td>20%</td></tr>
+                    <tr><td>الاختبار النهائي</td><td>16-17</td><td>40%</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="references">
+            <h2>المراجع والمصادر</h2>
+            <div class="reference-item" style="text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+                <p style="font-weight: bold; margin-bottom: 10px;">الكتاب المعتمد للمقرر:</p>
+                
+                <div style="width: 170px; height: 235px; background: #ffffff; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.15); margin: 0 auto 15px auto; padding: 10px; position: relative; font-family: 'Arial', sans-serif;">
+                    <div style="font-size: 14px; font-weight: bold; color: #333; margin-top: 5px;">Turgut Ozseven</div>
+                    <div style="font-size: 8px; color: #666; margin-bottom: 20px;">Editor</div>
+                    <div style="width: 90px; height: 90px; background: radial-gradient(circle, rgba(142,197,252,1) 0%, rgba(224,225,226,0.3) 70%); margin: 0 auto; border-radius: 50%; opacity: 0.7;"></div>
+                    <div style="font-size: 16px; font-weight: bold; color: #1e6b7b; letter-spacing: 0.5px; margin-top: 15px; line-height: 1.1;">HUMAN-COMPUTER</div>
+                    <div style="font-size: 16px; font-weight: bold; color: #1e6b7b; letter-spacing: 0.5px; margin-top: 2px;">INTERACTION</div>
+                    <div style="font-size: 6px; color: #555; text-transform: uppercase; margin-top: 15px; font-weight: bold;">Computer Science, Technology and Applications</div>
+                    <div style="background: #c2185b; color: white; font-size: 7px; font-weight: bold; display: inline-block; padding: 1px 6px; border-radius: 8px; margin-top: 10px;">NOVA</div>
                 </div>
+                
+                <a href="https://www.amazon.com/Human-Computer-Interaction-Turgut-Ozseven/dp/153616495X" target="_blank" style="font-weight: bold; color: #0066cc; text-decoration: none; display: inline-block; margin-top: 5px;">
+                    Human-Computer Interaction (Computer Science, Technology and Applications) - Turgut Özseven (2019)
+                </a>
             </div>
         </section>
-    </main>
-
-    <footer class="main-footer">
-        <p>© 2026 جامعة أم القرى | كلية علوم الحاسب ونظم المعلومات</p>
-    </footer>
+    </div>
 
 </body>
 </html>
